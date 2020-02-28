@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <script data-ad-client="ca-pub-7568856102716283" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>文字数カウンター</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" integrity="sha384-v8BU367qNbs/aIZIxuivaU55N5GPF89WBerHoGA4QTcbUjYiLQtKdrfXnqAcXyTv" crossorigin="anonymous">
+</head>
+<body>
+  <header>
+    <h1 id="title"><i class="fas fa-calculator"></i>文字数カウンター</h1>
+    <div class="about">
+      <p>文字数をカウントして表示します。<a href="#" id="open"><i class="fas fa-info-circle"></i>詳しくみる</a></p>
+      <p id="details" class="hidden">字数を数えたい文章を以下に直接入力するか、貼り付けてください。各種サービス新規登録時のパスワード作成など字数制限のある入力欄や、ブログ、ツイートの下書き、論文やレポートの字数確認に。アプリやソフトウェアをインストールすることなく、文字数を確認しながら文字列や文章を気軽に編集することができます。<i class="fas fa-copy"></i>コピーボタンも用意しましたのでご活用ください。<a href="#" id="hide"><i class="fas fa-times-circle"></i>閉じる</a></p>
+    </div>
+  </header>
+  <div class="container">
+    <main>
+        <textarea></textarea>
+        <ul id="counters">
+          <li class="count"><span id="counternumber">0</span>&nbsp;文字</li>
+          <li class="count">原稿用紙 (400字詰)：<span id="writingpaper400">0</span>&nbsp;枚</li>
+        </ul>
+        <div id="btns">
+          <button id="copy"><i class="fas fa-copy"></i>入力内容をコピーする</button>
+          <button id="reset"><i class="fas fa-eraser"></i>入力内容を削除する</button>
+        </div>
+
+        <div id="mask" class="hidden"></div>
+
+        <section id="modal1" class="hidden">
+          <p>コピーしました</p>
+          <button id="close"><i class="fas fa-times-circle"></i>閉じる</button>
+        </section>
+
+        <section id="modal2" class="hidden">
+          <p>本当に削除しますか？</p>
+          <div id="yesno">
+            <button id="no"><i class="fas fa-times-circle"></i>いいえ</button>
+            <button id="yes"><i class="fas fa-check-circle"></i>はい</button>
+          </div>
+        </section>
+
+        <!-- <ul id="shares">
+          <li><a href="https://twitter.com/intent/tweet?text=&url="><i class="fab fa-twitter"></i>Twitter</a></li>
+          <li><a href=""><i class="fab fa-facebook"></i>Facebook</a></li>
+          <li><a href="">はてブ</a></li>
+          <li><a href="">LINE</a></li>
+        </ul> -->
+      </main>
+      <nav>
+        <div class="tools">ツールリスト</div>
+      </nav>
+      <aside>
+          <div class="ad">AD</div>
+      </aside>
+  </div>
+
+  <footer>
+    <address>Copyright <i class="far fa-copyright"></i> Five Star Trading LLC</address>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
